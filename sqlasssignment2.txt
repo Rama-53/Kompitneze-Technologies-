@@ -1,0 +1,83 @@
+SELECT City, COUNT(*) AS Student_Count
+FROM Student
+GROUP BY City;
+
+
+SELECT Department, AVG(Marks) AS Average_Marks
+FROM Student
+GROUP BY Department;
+
+
+SELECT City, MAX(Marks) AS Highest_Marks
+FROM Student
+GROUP BY City;
+
+
+SELECT Department, MIN(Marks) AS Lowest_Marks
+FROM Student
+GROUP BY Department;
+
+
+SELECT City, SUM(Marks) AS Total_Marks
+FROM Student
+GROUP BY City;
+
+
+SELECT City, COUNT(*) AS Student_Count
+FROM Student
+GROUP BY City
+HAVING COUNT(*) > 2;
+
+
+SELECT Department, COUNT(*) AS Student_Count
+FROM Student
+GROUP BY Department
+HAVING COUNT(*) > 3;
+
+
+SELECT Department, AVG(Marks) AS Average_Marks
+FROM Student
+GROUP BY Department
+HAVING AVG(Marks) > 75;
+
+
+SELECT City, AVG(Marks) AS Average_Marks
+FROM Student
+GROUP BY City
+HAVING AVG(Marks) > 75;
+
+
+SELECT City, MAX(Marks) AS Highest_Marks
+FROM Student
+GROUP BY City
+HAVING MAX(Marks) > 85;
+
+
+SELECT Department, MIN(Marks) AS Lowest_Marks
+FROM Student
+GROUP BY Department
+HAVING MIN(Marks) > 60;
+
+
+SELECT Department, COUNT(*) AS Student_Count
+FROM Student
+GROUP BY Department
+HAVING COUNT(*) >= 4;
+
+
+SELECT City, AVG(Marks) AS Average_Marks
+FROM Student
+GROUP BY City
+HAVING AVG(Marks) > 70;
+
+
+SELECT Department, SUM(Marks) AS Total_Marks
+FROM Student
+GROUP BY Department
+HAVING SUM(Marks) > 400;
+
+
+SELECT Department, MAX(Marks) AS Maximum_Marks
+FROM Student
+GROUP BY Department
+HAVING MAX(Marks) > 90;

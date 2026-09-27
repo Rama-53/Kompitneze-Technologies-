@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .container{
+            background-color: aquamarine;
+            border: 1px solid black;
+            height: 50%;
+            width: 50%;
+            min-height: 50vh;
+            min-width: 70vw;
+            padding: 0px;
+        }
+        .navbar{
+            background-color: black;
+            height: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            flex-wrap: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        .left-top{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 1vw;
+        }
+        .logo{
+            padding: 1vw;
+            color: white;
+        }
+        .dropdown{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dropdown-toggle{
+            text-decoration: none;
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+        }
+        .right-top{
+            display: flex;
+            padding: 0px;
+            height: 100%;
+        }
+        .button-nav{
+            height: 65px;
+            background-color: darkgrey;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+        .started{
+            text-wrap: nowrap;
+        }
+        .subscribe:hover{
+            background-color: rgb(255, 238, 0);
+        }
+        .started:hover{
+            background-color: skyblue;
+        }
+        .content-page1{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 10px;
+            grid-column-gap: 20px;
+        }
+        .temp{
+            background-color: white;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="left-top">
+                <div class="logo">
+                    SPIN
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Pages
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Home</a></li>
+                        <li><a class="dropdown-item" href="#">About</a></li>
+                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Documentation
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Getting Started</a></li>
+                        <li><a class="dropdown-item" href="#">Installation</a></li>
+                        <li><a class="dropdown-item" href="#">Usage</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Components
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Buttons</a></li>
+                        <li><a class="dropdown-item" href="#">Cards</a></li>
+                        <li><a class="dropdown-item" href="#">Navbar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-top">
+                <button class="button-nav subscribe">
+                    Subcribe
+                </button>
+                <button class="button-nav started">
+                    Get Started-ist free
+                </button>
+            </div>
+        </nav>
+        <div class="content-page1">
+            <div class="temp">
+                <h1>Design &Build|
+                    Better Together.
+                </h1>
+            </div>
+            <div class="temp">
+                <img src="image.png" alt="image"/>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>

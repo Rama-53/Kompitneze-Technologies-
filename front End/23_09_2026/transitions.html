@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Examples</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .example {
+            width: 180px;
+            height: 180px;
+            background: white;
+            border: 2px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            background: tomato;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* No transition here.
+               We are learning transform first. */
+        }
+
+
+        /* 1. TRANSLATE */
+
+        .translate:hover {
+            transform: translate(50px, 20px);
+        }
+
+
+        /* 2. TRANSLATE X */
+
+        .translate-x:hover {
+            transform: translateX(50px);
+        }
+
+
+        /* 3. TRANSLATE Y */
+
+        .translate-y:hover {
+            transform: translateY(-50px);
+        }
+
+
+        /* 4. SCALE */
+
+        .scale:hover {
+            transform: scale(1.5);
+        }
+
+
+        /* 5. SCALE X */
+
+        .scale-x:hover {
+            transform: scaleX(1.5);
+        }
+
+
+        /* 6. SCALE Y */
+
+        .scale-y:hover {
+            transform: scaleY(1.5);
+        }
+
+
+        /* 7. ROTATE */
+
+        .rotate:hover {
+            transform: rotate(45deg);
+        }
+
+
+        /* 8. SKEW */
+
+        .skew:hover {
+            transform: skew(20deg);
+        }
+
+
+        /* 9. SKEW X */
+
+        .skew-x:hover {
+            transform: skewX(30deg);
+        }
+
+
+        /* 10. SKEW Y */
+
+        .skew-y:hover {
+            transform: skewY(20deg);
+        }
+
+
+        /* 11. MULTIPLE TRANSFORMS */
+
+        .multiple:hover {
+            transform: translateX(30px) rotate(30deg) scale(1.2);
+        }
+        .transition{
+            background-color: blue;
+            width: 180px;
+            height: 180px;
+            transition: background-color 1s;
+        }
+        .transition:hover{
+        
+            background-color: yellow;
+        }
+        .delay{
+            transition: transform 1s linear 0.5s;
+            /* {linerar,ease-in,ease-out,ease-in-out} */
+            background-color: violet;
+            height: 180px;
+            width: 180px;
+
+        }
+        .delay:hover{
+            transform: translateX(500px);
+        }
+        .opacity{
+            opacity: 50%;
+            background-color: darkblue;
+            height: 180px;
+            width: 180px;
+        }
+        .boxshadow{
+            background-color: black;
+            height: 180px;
+            opacity: 80%;
+            width: 180px;
+            box-shadow: 10px 10px 20px yellow;
+            /* x,y,blur,color */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Transform Examples</h1>
+
+    <p>Move your mouse over each box</p>
+
+    <div class="container">
+
+        <!-- Translate -->
+        <div class="example">
+            <div class="box translate">Translate</div>
+            <p>translate()</p>
+        </div>
+
+        <!-- Translate X -->
+        <div class="example">
+            <div class="box translate-x">Move X</div>
+            <p>translateX()</p>
+        </div>
+
+        <!-- Translate Y -->
+        <div class="example">
+            <div class="box translate-y">Move Y</div>
+            <p>translateY()</p>
+        </div>
+
+        <!-- Scale -->
+        <div class="example">
+            <div class="box scale">Scale</div>
+            <p>scale()</p>
+        </div>
+
+        <!-- Scale X -->
+        <div class="example">
+            <div class="box scale-x">Scale X</div>
+            <p>scaleX()</p>
+        </div>
+
+        <!-- Scale Y -->
+        <div class="example">
+            <div class="box scale-y">Scale Y</div>
+            <p>scaleY()</p>
+        </div>
+
+        <!-- Rotate -->
+        <div class="example">
+            <div class="box rotate">Rotate</div>
+            <p>rotate()</p>
+        </div>
+
+        <!-- Skew -->
+        <div class="example">
+            <div class="box skew">Skew</div>
+            <p>skew()</p>
+        </div>
+
+        <!-- Skew X -->
+        <div class="example">
+            <div class="box skew-x">Skew X</div>
+            <p>skewX()</p>
+        </div>
+
+        <!-- Skew Y -->
+        <div class="example">
+            <div class="box skew-y">Skew Y</div>
+            <p>skewY()</p>
+        </div>
+
+        <div class="example">
+            <div class="box multiple">Skew Y</div>
+            <p>skewY()</p>
+        </div>
+
+        <div class="transition">
+
+        </div>
+        <div class="delay">
+
+        </div>
+        <div class="opacity">
+
+        </div>
+        <div class="boxshadow">
+
+        </div>
+    </div>
+</body>

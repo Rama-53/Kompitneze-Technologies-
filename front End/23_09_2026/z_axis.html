@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS z-index Example</title>
+
+    <style>
+        /* =========================
+           NORMAL PAGE CONTENT
+        ========================== */
+        .content {
+            position: relative;
+            z-index: 1;
+
+            padding: 40px;
+            height: 500px;
+            background-color: #f1f5f9;
+            left: 100px;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================== */
+        .navbar {
+            position: relative;
+            z-index: 100;
+            background-color: #2563eb;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* =========================
+           DROPDOWN
+        ========================== */
+        .dropdown {
+            position: absolute;
+            z-index: 200;
+
+            top: 70px;
+            right: 30px;
+
+            width: 180px;
+            padding: 15px;
+
+            background-color: white;
+            color: black;
+
+            border: 1px solid #ddd;
+            border-radius: 8px;
+
+            box-shadow: 0 5px 15px hsla(0, 71%, 43%, 0.2);
+        }
+
+        /* =========================
+           MODAL OVERLAY
+        ========================== */
+        .modal-overlay {
+            position: fixed;
+            z-index: 999;
+
+            inset:0px;
+
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        /* =========================
+           MODAL
+        ========================== */
+        .modal {
+            position: fixed;
+            z-index: 1000;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            width: 350px;
+            padding: 30px;
+
+            background-color: white;
+            border-radius: 12px;
+
+            text-align: center;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .modal h2 {
+            margin-top: 0;
+        }
+
+        .close-btn {
+            padding: 10px 20px;
+
+            border: none;
+            border-radius: 6px;
+
+            background-color: #2563eb;
+            color: white;
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <nav class="navbar">
+        <h2>My Website</h2>
+
+        <!-- DROPDOWN -->
+        <div class="dropdown">
+            <strong>Dropdown Menu</strong>
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact</p>
+        </div>
+    </nav>
+
+
+    <!-- =========================
+         NORMAL CONTENT
+    ========================== -->
+    <main class="content">
+
+        <h1>CSS z-index Example</h1>
+
+        <p>
+            This is the normal page content.
+        </p>
+
+        <p>
+            The navbar has z-index: 100.
+        </p>
+
+        <p>
+            The dropdown has z-index: 200.
+        </p>
+
+        <p>
+            The modal overlay has z-index: 999.
+        </p>
+
+        <p>
+            The modal has z-index: 1000.
+        </p>
+
+    </main>
+
+
+    <!-- =========================
+         DARK OVERLAY
+    ========================== -->
+    <div class="modal-overlay"></div>
+
+
+    <!-- =========================
+         MODAL
+    ========================== -->
+    <div class="modal">
+
+        <h2>Hello 👋</h2>
+
+        <p>
+            This modal is displayed above everything
+            because it has z-index: 1000.
+        </p>
+
+        <button class="close-btn">
+            Close
+        </button>
+
+    </div>
+
+</body>
+</html>

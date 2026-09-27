@@ -1,0 +1,62 @@
+CREATE TABLE Student (
+    Student_ID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Age INT,
+    Gender CHAR(1),
+    City VARCHAR(50),
+    Marks INT,
+    Course VARCHAR(50)
+);
+
+INSERT INTO Student (Student_ID, Name, Age, Gender, City, Marks, Course)
+VALUES
+(101, 'Arun', 20, 'M', 'Kochi', 85, 'Python'),
+(102, 'Anu', 19, 'F', 'Thrissur', 92, 'SQL'),
+(103, 'Rahul', 21, 'M', 'Kochi', 76, 'Java'),
+(104, 'Meera', 20, 'F', 'Kottayam', 88, 'Python'),
+(105, 'Vishnu', 22, 'M', 'Alappuzha', 67, 'SQL');
+
+SELECT * FROM Student;
+
+SELECT Name, City, Marks
+FROM Student;
+
+SELECT *
+FROM Student
+WHERE Marks > 80;
+
+SELECT *
+FROM Student
+WHERE Age = 20;
+
+SELECT *
+FROM Student
+WHERE City = 'Kochi';
+
+SELECT *
+FROM Student
+WHERE Marks BETWEEN 70 AND 90;
+
+SELECT *
+FROM Student
+WHERE Course = 'Python' OR Course = 'SQL';
+
+SELECT *
+FROM Student
+WHERE Course IN ('Python', 'SQL');
+
+UPDATE Student
+SET City = 'Kochi'
+WHERE Student_ID = 105;
+
+DELETE FROM Student
+WHERE Student_ID = 105;
+
+DELETE FROM Student
+WHERE Marks < 70;\
+
+ALTER TABLE Student
+ADD Email VARCHAR(100);
+
+ALTER TABLE Student
+DROP COLUMN Email;

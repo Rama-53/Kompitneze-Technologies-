@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_final.css">
+    <style>
+    .container{
+        width: 188px;
+        height: 180px;
+        background-color:blue;
+        animation-name: move;
+        animation-duration: 2s;
+    }
+
+    @keyframes move{
+        from{
+            transform:translateX(0);
+            animation-duration: 10s;
+        }
+        to{
+            transform: translateX(300px);
+        }
+    }
+    .sqaure{
+        animation-name: forwards;
+        animation-duration: 3s;
+        animation-direction: reverse;
+        background-color: aquamarine;
+        height: 200px;
+        width: 200px;
+    }
+    @keyframes forwards {
+        0%{
+            transform: scale(1.5);
+        }
+        50%{
+            transform: rotate(30deg);
+        }
+        100%{
+            transform: translateX(300px);
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello guyz....</h1>
+    </div>
+    <div class="sqaure">
+
+    </div>
+</body>
+</html>

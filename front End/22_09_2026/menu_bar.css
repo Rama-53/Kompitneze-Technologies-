@@ -1,0 +1,17 @@
+
+.nav{
+width: 100%;
+height: 40px;
+background-color:blueviolet;
+}
+ul{
+height: 100%;
+width: 30%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+li{
+    list-style: none;
+}
+

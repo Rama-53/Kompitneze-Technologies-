@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* .box{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+        }
+        @media(min-width:500px)  {
+            .box{
+                background-color: black;
+            }
+        } */
+         a{
+            text-decoration: none;
+            color: black;
+
+         }
+        .nav{
+            background-color: lightblue ;
+            display: flex;
+            gap: 30px;
+            padding: 20px;
+            margin: 0px;
+            border-radius: 3px;
+        }
+        @media(max-width :600px){
+            .nav{
+                flex-direction: column;
+                gap: 10px;
+                max-width: 20%;
+                min-height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>

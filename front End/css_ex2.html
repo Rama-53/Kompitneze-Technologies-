@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            color: blue;
+        }
+        div>p{
+            font-weight: bold;
+        }
+        /* h2+p{
+            color: green;
+        } */
+        h2 ~p{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This paragraph inside div</p>
+        <section>
+            <p>This is also selected</p>
+        </section>
+        <h2>Heading</h2>
+    </div>
+    <h2>heading1</h2>
+    <p>heading2</p>
+    <p>This paragraph is outside div</p>
+</body>
+</html>

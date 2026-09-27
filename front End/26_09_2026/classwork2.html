@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .container{
+            margin: 0px;
+            padding: 0px;
+            color:white;
+            min-width: 100vw;
+            gap: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .navbar{
+            margin: 0px;
+            background-color: black;
+            display: grid;
+            padding: 1vw;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr  1fr;
+            grid-row-gap: 10px;
+            grid-column-gap: 10p;
+            padding-bottom: 50px;
+        }
+        .topleft{
+            grid-row: 1/2;
+        }
+        .top-right{
+            display: flex;
+            justify-content: space-between;
+            grid-row: 1/2;
+            text-align: right;
+            padding-right: 1vw;
+        }
+        .welcome{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            grid-row: 2/3;
+            grid-column: 1/3;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color: black;
+        }
+        .services{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+        .services2{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            background-color: lightgrey;
+            padding: 1vw;
+            padding-top: 50px;
+            padding-bottom: 100px;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            grid-row: 1fr;
+            grid-column: 1fr;
+            border: 1px solid black;
+            border-radius: 5px ;
+            justify-content: center;
+            padding: 1vw;
+        }
+        .image{
+            height: 20vw;
+        }
+        .customer-res{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="topleft">
+                <h1>Coffee Shop</h1>
+            </div>
+            <div class="top-right">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Gallery</a>
+                <a href="#">Testimolianls</a>
+                <a href="#">Conatct</a>
+            </div>
+            <div class="welcome">
+                <h1>Welcome to Our Coffe Shop</h1>
+                <p>Enjoy the best coffee in town</p>
+                <div>
+                    <button class="btn btn-primary">Explore Our Services</button>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <br>
+            <br>
+            <h2>Our Services</h2>
+            <br>
+            <div class="services">
+                <div class="box ">
+                    <h3>Fresh Coffee</h3>
+                    <p>We serve freshly brewed coffee from the finest beans</p>
+                </div>
+                <div class="box">
+                    <h3>Fresh Coffee</h3>
+                    <p>We serve freshly brewed coffee from the finest beans</p>
+                </div><div class="box">
+                    <h3>Fresh Coffee</h3>
+                    <p>We serve freshly brewed coffee from the finest beans</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h2>Gallery</h2>
+            <br>
+
+            <div class="services2">
+                <img src="image.jpeg" alt="image" class="image"/>
+                <img src="image.jpeg" alt="image" class="image"/>
+                <img src="image.jpeg" alt="image" class="image"/>
+            </div>
+            <br>
+            <br>
+            <h2>What our Customers Say</h2>
+            <br> 
+            <div class="services">
+                <div class="box customer-res ">
+                    <p1>"The best coffee I've ever had!Highly reccomend this place."</p1>
+                    <p1>- John Doe</p1>
+                </div>
+                <div class="box  customer-res" >
+                    <p1>"The best coffee I've ever had!Highly reccomend this place."</p1>
+                    <p1>- John Doe</p1>
+                </div><div class="box  customer-res">
+                    <p1>"The best coffee I've ever had!Highly reccomend this place."</p1>
+                    <p1>- John Doe</p1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>

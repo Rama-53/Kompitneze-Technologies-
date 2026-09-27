@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Student Registration form</legend>
+            <label for="name">Student Name</label>
+            <input type="text">
+            <br>
+            <br>
+            <label for="Description">Description</label>
+            <textarea name="Description" id="Description"></textarea>
+            <br>
+            <label for="district">District</label>
+            <select name="district" id="district">
+                <option selected disabled>Select a value</option>
+                <option value="ekm">EKM</option>
+                <option value="alu">ALUVA</option>
+                <option value="idu">IDUKKI</option>
+                <option value="mal">MALAPURAM</option>
+            </select>
+            <br>
+            
+            <button type="submit">Submit Button</button>
+            <br>
+            <button type="Reset">Reset Button</button>
+            <br>
+            <button>Normal Button</button>
+            <br>
+
+            <select name="district" id="district">
+                <optgroup label="EKM">
+                    <option value="ekm">Vytilla</option>
+                    <option value="alu">Kochi</option>
+                    <option value="idu">Queens Walk</option>
+                    <option value="mal">Marine Drive</option>
+                </optgroup>
+                <optgroup label="Kollam">
+                    <option value="chenne">Chennekada</option>
+                    <option value="kada">Kadapakada</option>
+                    <option value="Pun">Punalur</option>
+                </optgroup>
+            </select>
+            <br>
+            <select name="course">
+
+                <optgroup label="Programming">
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                </optgroup>
+
+                <optgroup label="Database">
+                    <option value="mysql">MySQL</option>
+                    <option value="mongodb">MongoDB</option>
+                </optgroup>
+
+            </select>
+
+            <br>
+            Cochin Techschool
+            12:57
+            <label for="city">Choose City:</label>
+
+            <input type="text" id="city" name="city" list="cities">
+
+            <datalist id="cities">
+                <option value="Kochi">
+                <option value="Thiruvananthapuram">
+                <option value="Kozhikode">
+                <option value="Kannur">
+            </datalist>
+        </fieldset>
+    </form>
+</body>
+</html>
